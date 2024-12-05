@@ -145,6 +145,7 @@ figure.quote {
     margin-bottom: 2rem;
     }
 
+
     figure.quote p{
         margin-bottom:0;
         }
@@ -184,7 +185,7 @@ figure.quote {
 
         .highlight {
                      background-color: #CF2F1B;
-                     padding:0 0.5rem;
+                     padding:0.01rem;
                     
                     }
 
@@ -242,4 +243,31 @@ figure.quote {
                                         }
                     
                     }
+
+                    body, html {
+  height: 100%;
+}
+
+.colour-block {
+    background-image: url('../images/Bruno2.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    
+  }
+
+  img {
+    float: left; /* Align images to the left */
+    width: 200px; /* Adjust the size as needed, e.g., 200px */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Add some spacing to the right of the images */
+    margin-bottom: 15px; /* Add spacing below the images */
+  }
+  
+  
                     
