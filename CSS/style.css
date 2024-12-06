@@ -53,13 +53,13 @@ body {
 
 /*specific styles*/
 h1{
-    font-size: 4.25rem;
+    font-size: 4.4rem;
     margin-bottom: 2rem;
     color: #ffffff;
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-bottom: .5rem;
     
  
@@ -68,20 +68,19 @@ h2 {
 h3 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    padding-top: 1rem;
+    align-items: center;
 }
 
-h4 {
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-    }
+
 
     /* Paragraphs */
 p {
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.8rem;
     font-style: normal;
     }
 
@@ -98,7 +97,7 @@ p.large {
 
     ul {
         list-style: disc outside;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.8rem;
         margin-left: 1.25rem;
         }
         ul li {
@@ -115,13 +114,15 @@ a {
     font-size:inherit;
     line-height: inherit;
     color: #0a91ff;
-}
+    
+    }
+
 
 a:hover {
     color:#0a91ff;
     }
     a:visited {
-    color:#6935d2;
+    color:#0a91ff
     }    
 
 
@@ -171,7 +172,29 @@ figure.quote {
         header{
                 border-bottom:2px solid #202221;
                 padding:1.5rem 0;
+                align-items: last baseline;
                 }
+
+                
+.header-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  
+  .header-content .text-content {
+    flex: 1; 
+  }
+  
+  
+  .header-content .logo-content img {
+    max-width: 200px; 
+    height: auto; 
+    padding-top: 1.5rem;
+  }
+  
+                
         header p.logo{
                 font-weight: 700;
                 margin-bottom:0;
