@@ -17,6 +17,8 @@
     flex-direction: row;
     }
 
+ 
+
     /* CSS grids column widths */
 .grid-col-third {
     flex-basis: 33.33%;
@@ -248,6 +250,7 @@ figure.quote {
   height: 100%;
 }
 
+  /* Background image */
 .colour-block {
     background-image: url('../images/Bruno2.png');
     background-size: cover; 
@@ -261,13 +264,30 @@ figure.quote {
     
   }
 
+
+    /* Image aligment */
   img {
-    float: left; /* Align images to the left */
-    width: 200px; /* Adjust the size as needed, e.g., 200px */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Add some spacing to the right of the images */
-    margin-bottom: 15px; /* Add spacing below the images */
+    float: left; 
+    width: 200px; 
+    height: auto; 
+    margin-right: 15px; 
+    margin-bottom: 15px; 
   }
-  
+
+  .top-btn {
+    text-align: center; 
+    text-decoration: none; 
+    color: black; 
+}
+
+.top-btn a {
+    text-decoration: none; 
+    color: black; 
+}
+
+.top-btn a p {
+    margin: 0; 
+}
+
   
                     
