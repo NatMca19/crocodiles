@@ -230,7 +230,7 @@ main{
 
 /* Background image */
 .bgimg {
-    background-image: url('../images/Bruno2.png');
+    background-image: url(images/Bruno2.png);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -279,4 +279,3 @@ main{
     cursor: pointer; 
 }
 
-test
