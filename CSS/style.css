@@ -1,280 +1,235 @@
 /* Import from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');
 
-/* css reset */
-
+/* General Reset */
 * {
-    padding: 0;
     margin: 0;
-    font-size:100%;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
     line-height: 1em;
-    }
-
-        /*css grids*/
-.grid {
-    display: flex;
-    gap:24px;
-    flex-direction: row;
-    }
-
- 
-
-    /* CSS grids column widths */
-.grid-col-third {
-    flex-basis: 33.33%;
-    }
-    .grid-col-twoThirds {
-    flex-basis: 66.66%;
-    }
+}
 
 /*default styles for whole page*/
 body {
-    color:#101010;
-    border-color: #101010;
     background-color: #ffffff;
-    }
+}
 
-    /* content container to centre content */
-    .container {
-    max-width: 1020px;
-    margin: 0 auto 0 auto;
-    }
+/* content container to centre content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
 
-  /* Default styling for Headings */
-    h1,h2,h3,h4,h5,h6 {
+/* Main Content Wrapper */
+main {
+    max-width: 920px;
+    margin: 0 auto;
+}
 
-    font-family: "Charis SIL", Georgia, 'Times New Roman', Times,
-    serif;
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 50px;
+    max-width: 960px;
+    margin: 0 auto; 
+}
 
+
+
+
+
+/* Default styling for Headings */
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Charis SIL", Georgia, 'Times New Roman', Times, serif;
     line-height: 1.1;
     font-weight: 100;
-    }
-
+}
 
 /*specific styles*/
 h1{
-    font-size: 4.4rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
     color: #ffffff;
+    text-align: center;
+   
+
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: .5rem;
-    
- 
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     padding-top: 1rem;
     align-items: center;
 }
 
-
-
-    /* Paragraphs */
+/* Paragraphs */
 p {
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 1.25rem;
-    margin-bottom: 1.8rem;
+    font-size: 1.4rem;
+    margin-bottom:3rem;
     font-style: normal;
-    }
+}
 
-    /*paragraph large */
+/*paragraph large */
 p.large {
-    font-family: "Quicksand", Georgia, 'Times New Roman', Times,
-    serif;
+    font-family: "Quicksand", Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: italic;
     line-height: 1.5;
     font-size: 1.5rem;
     margin-bottom: 2.5rem;
-    }
+}
 
-    ul {
-        list-style: disc outside;
-        margin-bottom: 1.8rem;
-        margin-left: 1.25rem;
-        }
-        ul li {
-        font-family: "Quicksand", Arial, Helvetica, sans-serif;
-        font-weight: 400;
-        line-height: 1.5;
-        font-size: 1.125rem;
-        margin-bottom: .5rem;
-        }
+ul {
+    list-style: disc outside;
+    margin-bottom: 1.8rem;
+    margin-left: 1.25rem;
+}
 
-        /* hyperlinks */
+ul li {
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+}
+
+/* hyperlinks */
 a {
     font-family:inherit;
     font-size:inherit;
     line-height: inherit;
     color: #0a91ff;
-    
-    }
-
+}
 
 a:hover {
     color:#0a91ff;
-    }
-    a:visited {
+}
+a:visited {
     color:#0a91ff
-    }    
-
+}    
 
 /* images*/
 img{
-    max-width: 1020px;
+    max-width: 960px;
     width:100%;
     height:auto;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-  /*contents*/
-  figure.contents {
+/*contents*/
+figure.contents {
     border-left: 8px solid #CF2F1B;
     padding:1.5rem 0 1.5rem 2rem;
     margin-bottom: 2rem;
-    }
+}
 
 /*blockquote*/
 figure.quote {
     border-left: 8px solid #CF2F1B;
     padding:1.5rem 0 1.5rem 2rem;
     margin-bottom: 2rem;
-    }
-
-
-    figure.quote p{
-        margin-bottom:0;
-        }
-        figure.quote blockquote {
-        margin-bottom:.5rem;
-        }
-        figure.quote figcaption p{
-        font-weight:700;
-        }
-
-        footer {
-            padding: 1.5rem 0 1.5rem 0;
-            margin-top:2rem;
-            border-top:1px solid #202221;
-            }
-
-        main{
-         margin-bottom: 2.5rem;
-            }
-
-        header{
-                border-bottom:2px solid #202221;
-                padding:1.5rem 0;
-                align-items: last baseline;
-                }
-
-                
-.header-content {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-  }
-  
-  
-  .header-content .text-content {
-    flex: 1; 
-  }
-  
-  
-  .header-content .logo-content img {
-    max-width: 200px; 
-    height: auto; 
-    padding-top: 1.5rem;
-  }
-  
-                
-        header p.logo{
-                font-weight: 700;
-                margin-bottom:0;
-                font-size:1.75rem;
-                line-height: 1.1;
-                }
-
-        .colour-block{
-                    padding:3rem 0 3rem 0;
-                    background-color:#202221;
-                    margin-bottom:2.5rem;
-                    }
-
-        .highlight {
-                     background-color: #CF2F1B;
-                     padding:0.01rem;
-                    
-                    }
-
-                    @media only screen and (max-width:1068px) {
-                        .container {
-                        margin: 0 24px 0 24px;
-                        }
-                        }
-                        @media only screen and (max-width: 768px) {
-                            .grid {
-                                flex-direction: column;
-                                }
-                        }
-                        @media only screen and (max-width: 600px) {
-                        .container {
-                        margin: 0 16px 0 16px;
-                        }
-                        h1{
-                            font-size: 2.25rem;
-                            margin-bottom: 1rem;
-                            }
-                            h2{
-                            font-size: 1.875rem;
-                            }
-                            h3{
-                            font-size: 1.5rem;
-                            }
-                            h4{
-                            font-size: 1.25rem;
-                            }
-                    
-                            p.large {
-                                font-size: 1.25rem;
-                                margin-bottom: 2rem;
-                                }
-                                p{
-                                font-size: 1rem;
-                                margin-bottom: 1rem;
-                                }
-                    
-                                ul {
-                                    margin-bottom: 1rem;
-                                    }
-                                    ul li {
-                                    font-size: 1rem;
-                                    margin-bottom: .5rem;
-                                    }
-                    
-                                    header p.logo{
-                                        font-size:1.25rem;
-                                        }
-                                        .colour-block{
-                                        padding:2rem 0;
-                                        margin-bottom:2rem;
-                                        }
-                    
-                    }
-
-                    body, html {
-  height: 100%;
 }
 
-  /* Background image */
-.colour-block {
+figure.quote p{
+    margin-bottom:0;
+}
+
+figure.quote blockquote {
+    margin-bottom:.5rem;
+}
+
+figure.quote figcaption p{
+    font-weight:700;
+}
+
+footer {
+    padding: 1.5rem 0 1.5rem 0;
+    margin-top:2rem;
+    border-top:1px solid #202221;
+   
+}
+
+main{
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+.highlight {
+    background-color: #CF2F1B;
+    padding:0.01rem;
+}
+
+/* Responsive media queries */
+@media only screen and (max-width:960px) {
+    .container {
+        margin: 0 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 0 16px;
+    }
+    h1{
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        font-size: 1.875rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.25rem;
+    }
+
+    p.large {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        margin-bottom: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    header p.logo{
+        font-size:1.25rem;
+    }
+}
+
+
+
+/* Background image */
+.bgimg {
     background-image: url('../images/Bruno2.png');
     background-size: cover; 
     background-position: center; 
@@ -284,33 +239,43 @@ figure.quote {
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    
-  }
+}
 
 
-    /* Image aligment */
-  img {
-    float: left; 
-    width: 200px; 
-    height: auto; 
-    margin-right: 15px; 
-    margin-bottom: 15px; 
-  }
 
-  .top-btn {
-    text-align: center; 
-    text-decoration: none; 
-    color: black; 
+/* Back to top button  */
+.top-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem; /* Adjust margin as needed */
+}
+
+/* Style for the button */
+.top-btn {
+    text-align: center;
+    text-decoration: none;
+    background-color: #CF2F1B; 
+    color: white; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    border-radius: 5px; 
 }
 
 .top-btn a {
-    text-decoration: none; 
-    color: black; 
+    text-decoration: none;
+    color: white; 
 }
 
 .top-btn a p {
-    margin: 0; 
+    margin: 0;
 }
 
-  
-                    
+/* Hover effect */
+.top-btn:hover {
+    background-color: darkred;
+    transform: scale(1.05); 
+    cursor: pointer; 
+}
+
