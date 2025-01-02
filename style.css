@@ -1,5 +1,5 @@
-/* Import from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
 /* General Reset */
 * {
@@ -10,6 +10,35 @@
     line-height: 1em;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    justify-content: center;
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    font-family: "Hind Madurai";
+  
+
+}
+
 /*default styles for whole page*/
 body {
     background-color: #ffffff;
@@ -18,12 +47,6 @@ body {
 /* content container to centre content */
 .container {
     max-width: 960px;
-    margin: 0 auto;
-}
-
-/* Main Content Wrapper */
-main {
-    max-width: 920px;
     margin: 0 auto;
 }
 
@@ -71,17 +94,18 @@ h3 {
 
 /* Paragraphs */
 p {
-    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-family: "Hind Madurai";
     font-weight: 400;
     line-height: 1.5;
     font-size: 1.4rem;
     margin-bottom:3rem;
     font-style: normal;
+  
 }
 
 /*paragraph large */
 p.large {
-    font-family: "Quicksand", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Hind Madurai", Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
     font-style: italic;
     line-height: 1.5;
@@ -108,15 +132,14 @@ a {
     font-family:inherit;
     font-size:inherit;
     line-height: inherit;
-    color: #0a91ff;
+    color: #000000;
+   
 }
 
 a:hover {
     color:#0a91ff;
 }
-a:visited {
-    color:#0a91ff
-}    
+   
 
 /* images*/
 img{
@@ -152,6 +175,8 @@ figure.quote figcaption p{
     font-weight:700;
 }
 
+
+
 footer {
     padding: 1.5rem 0 1.5rem 0;
     margin-top:2rem;
@@ -176,6 +201,22 @@ main{
 @media only screen and (max-width:960px) {
     .container {
         margin: 0 24px;
+    }
+
+     /*display navigation on desktop */
+
+     nav {
+        display: flex;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    /* hide menu icon on desktop */
+
+    .menu-icon {
+        display: none !important;
     }
 }
 
@@ -209,7 +250,7 @@ main{
     }
     p{
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     ul {
@@ -225,6 +266,25 @@ main{
         font-size:1.25rem;
     }
 }
+
+    
+
+
+
+
+
+.active a {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-left: 0;
+}
+
+.active a:last-of-type {
+    margin-bottom: 0;
+}
+
+
 
 
 
