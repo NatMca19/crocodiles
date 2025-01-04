@@ -267,6 +267,11 @@ main{
     header p.logo{
         font-size:1.25rem;
     }
+
+    .highlight {
+        padding:0.01rem;
+        background: linear-gradient(to left, #CF2F1B, #CF2F1B) 0 55% / 100% 40px no-repeat;
+    }
 }
 
     
