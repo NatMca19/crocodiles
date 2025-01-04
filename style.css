@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
     justify-content: center;
     
 }
@@ -35,7 +35,7 @@ nav a {
     text-transform: uppercase;
     margin-left: 40px;
     font-family: "Hind Madurai";
-  
+
 
 }
 
@@ -105,7 +105,7 @@ p {
 
 /*paragraph large */
 p.large {
-    font-family: "Hind Madurai", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Hind Madurai", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-style: italic;
     line-height: 1.5;
@@ -120,7 +120,7 @@ ul {
 }
 
 ul li {
-    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-family: "Hind Madurai", Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     font-size: 1.125rem;
@@ -132,12 +132,12 @@ a {
     font-family:inherit;
     font-size:inherit;
     line-height: inherit;
-    color: #000000;
+    color: #0a91ff;
    
 }
 
 a:hover {
-    color:#0a91ff;
+    color:#0771c7;
 }
    
 
@@ -149,11 +149,12 @@ img{
     margin-bottom: 3rem;
 }
 
-/*contents*/
+/*figure*/
 figure.contents {
     border-left: 8px solid #CF2F1B;
     padding:1.5rem 0 1.5rem 2rem;
     margin-bottom: 2rem;
+
 }
 
 /*blockquote*/
@@ -165,6 +166,7 @@ figure.quote {
 
 figure.quote p{
     margin-bottom:0;
+    font-style: italic;
 }
 
 figure.quote blockquote {
@@ -193,8 +195,8 @@ main{
 
 
 .highlight {
-    background-color: #CF2F1B;
     padding:0.01rem;
+    background: linear-gradient(to left, #CF2F1B, #CF2F1B) 0 55% / 100% 90px no-repeat;
 }
 
 /* Responsive media queries */
@@ -308,7 +310,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem; /* Adjust margin as needed */
+    margin-top: 2rem; 
 }
 
 /* Style for the button */
@@ -334,7 +336,7 @@ main{
 
 /* Hover effect */
 .top-btn:hover {
-    background-color: darkred;
+    background-color: #9c200f;
     transform: scale(1.05); 
     cursor: pointer; 
 }
